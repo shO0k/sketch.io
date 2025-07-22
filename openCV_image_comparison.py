@@ -22,7 +22,7 @@ def compare_images_openCV(file_path1, file_path2):
         #create list of matches
         matches = bf.match(descriptors1, descriptors2)
 
-        #sort matches, define "good" in "good match" to be a hamming distance between two bit vectors to be less than 50
+        #sorts matches, define "good" in "good match" to be a hamming distance between two bit vectors to be less than 50
         matches = sorted(matches, key=lambda x: x.distance)
         good_matches = [m for m in matches if m.distance < 50]
 
