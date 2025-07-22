@@ -35,10 +35,7 @@ def output_list(list, sketch_profile):
         result.sort(key=lambda i: i[1], reverse=True)
         return result
 
-start_path = '/Users/johnshook/Downloads'
+start_path = 'file_path_here'
 sketch_profile = get_feature_profile()
 
 results = output_list(file_iterator(start_path), sketch_profile)
-print(results)
-print(results[0])
-print(results[-1])
