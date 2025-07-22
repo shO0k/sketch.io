@@ -26,6 +26,6 @@ def compare_images_openCV(file_path1, file_path2):
         matches = sorted(matches, key=lambda x: x.distance)
         good_matches = [m for m in matches if m.distance < 50]
 
-        # retursn number of "good" matches
+        # returns number of "good" matches
         return len(good_matches)
 
