@@ -9,7 +9,7 @@ Components:
 4) feature comparison model: compares the extracted imagistic features between two files
 
 Model outline:
-Converts user inputted sketch to a .pdf file > extracts features from .pdf using pdf-to-edge > iterate through file hierarcy and extract features from each file using pdf-to-edge > compare features and output a list of local files rank ordered by probability of match.
+Converts user inputted sketch to a .pdf/.png.jpeg file > extracts features from file > iterate through file hierarcy and extract features from each file > compare features and output a list of local files rank-ordered by probability of match.
 
 Thoughts for model outline:
 - hash function to store a pair: (file_path, feature_profile) for ease of comparison for future lookups
