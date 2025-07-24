@@ -13,4 +13,5 @@ if __name__ == "__main__":
         results = fc.file_iterator(sketch_path, start_path)
 
         for filename, score in results:
-                print(f"{filename}: {score:.4f}")
+                percent = score * 100
+                print(f"{filename}: {percent:.2f}" + "%")
