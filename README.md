@@ -14,3 +14,5 @@ Thoughts for model outline:
 - hash function to store a pair: (file_path, feature_profile) for ease of comparison for future lookups
 - for output, return a pair: (file_path, probaility_score)
 - make concrete the notion of a "feature profile"
+
+Questions about security/privacy: Program needs to access user files. Must impliment features to ensure the security of such files, and give user complete control to which files the program may access (perhaps allow user to mark which specific directories the program may access). Create a local file quiery (local data base) system for hashing, do not store sensitive information in a data base with files from other users. Program needs to be completely self-contained on the user's local system.
