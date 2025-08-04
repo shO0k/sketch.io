@@ -4,9 +4,8 @@ This model will take a (often low-fidelity) user-generated sketch and match it w
 
 Components:
 1) sketch-to-pdf software interface
-2) pdf-to-edge detection model: extracts relevant features from pdfs (and other file types later)
-3) file crawler: iterates through local file/directory hierarchy to scan the contents of each file
-4) feature comparison model: compares the extracted imagistic features between two files
+2) file crawler: iterates through local file/directory hierarchy to scan the contents of each file
+3) feature comparison model: compares the extracted imagistic features between two files (CLIP, openCV for now)
 
 Model outline:
 Converts user inputted sketch to a .pdf/.png.jpeg file > extracts features from file > iterate through file hierarcy and extract features from each file > compare features and output a list of local files rank-ordered by probability of match.
