@@ -1,6 +1,6 @@
 import sys
 import json
-sys.path.append("/Users/johnshook/Unix/Projects/Sketch")
+sys.path.append("/Appropriate/File/Path/Here")
 import file_crawler as fc
 
 
