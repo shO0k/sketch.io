@@ -35,7 +35,7 @@ struct ContentView: View {
         }
 
         func saveImage(_ image: NSImage) -> String {
-                let directoryPath = "/Users/johnshook/Unix/Projects/Sketch/sketch.io/sketch.io/Images"
+                let directoryPath = "/File/Path/To/Image/Folder"
                 let filename = "sketch_\(Int(Date().timeIntervalSince1970)).png"
                 let path = URL(fileURLWithPath: directoryPath).appendingPathComponent(filename)
                 if let tiffData = image.tiffRepresentation,
@@ -47,7 +47,7 @@ struct ContentView: View {
         }
 
         func runPythonSearch(with sketchPath: String) {
-                let startPath = "/Users/johnshook/Unix/Projects/Sketch/Test_images"
+                let startPath = "/Start/Path/To/Traverse"
                 let output = Initializer.runSearchScript(sketchPath: sketchPath, startPath: startPath)
                 let lines = output.split(separator: "\n").map {String($0)}
                 results = lines
