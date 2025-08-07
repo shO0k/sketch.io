@@ -2,6 +2,18 @@
 Scenario: A user is looking for a specific file on their hard drive (or image on the web), but can only remember a hint of an image within the file (symbol, logo, seal of approval, award ribbon, etc). 
 This model will take a (often low-fidelity) user-generated sketch and match it with imagisitc components of files on their hard drive (or images on the web). The output will be a list of the highest probability matches, helping to narrow the search space.
 
+Progress logs:
+08-06-2024: rapid prototype (sketch to rank-ordered list output) complete.
+
+Future directions:
+1) add "undo" button.
+2) fix alignment of cursor and sketch line.
+3) functionality to click on result and open file.
+4) ability to input a .png/.jpg/.jpeg file into search bar, in addition to user-generated sketch (drag and drop feature).
+5) make UI more aestheitcally pleasing.
+6) bundle app securely
+
+
 Components:
 1) sketch-to-pdf software interface
 2) file crawler: iterates through local file/directory hierarchy to scan the contents of each file
